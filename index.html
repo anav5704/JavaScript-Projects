@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45f1e4db6d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Anton&family=Azeret+Mono&family=Bodoni+Moda:opsz@6..96&family=Carter+One&family=Caveat&family=Ceviche+One&family=Courgette&family=Dancing+Script:wght@500&family=El+Messiri&family=Expletus+Sans:ital@1&family=Fredoka+One&family=Imprima&family=League+Spartan&family=Manrope&family=Merienda&family=Montserrat&family=Oxygen&family=Patrick+Hand&family=Permanent+Marker&family=Piazzolla:opsz@8..30&family=Poppins&family=Puritan&family=Raleway+Dots&family=Satisfy&family=Sora&family=Source+Code+Pro:wght@500&family=Vidaloka&family=Yatra+One&family=Yeseva+One&family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="customCursor"></div>
+
+    <div class="project">
+        <div class="container">
+            <h1 class="header">JavaScript Projects 👇</h1>
+        </div>
+    </div>
+
+    <div class="project">
+        <h1>Digital Clock</h1>
+       <div class="clock">
+            <div class="container">
+                <div class="hr"></div>
+            </div>
+            <p>:</p>
+            <div class="container">
+                <div class="min"></div>
+            </div>
+            <p>:</p>
+            <div class="container">
+                <div class="sec"></div>
+            </div>
+       </div>
+    </div>
+
+    <div class="project">
+        <h1>Hide/Show</h1>
+        <div class="container">
+        
+            <div class="input">
+                <input type="password" class="password" placeholder="Password">
+                <span id="hide-show"><i class="fa-solid fa-eye"></i> </span>
+            </div>
+        </div>
+    </div>
+
+  <div class="project">
+    <h1>Password Generator</h1>
+    <div class="container">
+        <div class="flex"><p>Password Length:</p><input class="length" type="number">    <button id="gen" class="btn">Generate</button></div>
+       <div class="flex" style="margin-top:20px ;"><p>Password: </p> <h4 id="pass"></h4></div>
+    
+    </div>
+  </div>
+
+    <div class="project">
+        <h1>Make a Div</h1>
+        <div class="container">
+        Height:
+        <select name="newcss" id="height">
+            <option value="100px">100px</option>
+            <option value="200px">200px</option>
+            <option value="300px">300px</option>
+        </select>
+        Width:
+        <select name="newcss" id="width">
+            <option value="100px">100px</option>
+            <option value="200px">200px</option>
+            <option value="300px">300px</option>
+        </select>
+        Color:
+        <select name="newcss" id="backgroundColor">
+            <option value="red">Red</option>
+            <option value="lime">Green</option>
+            <option value="slateblue">Blue</option>
+        </select>
+        <button id="make">Make</button>
+        <div id="thediv"></div>
+    </div>
+    </div>
+
+    <div class="project">
+        <h1>BMI Calculator</h1>
+            <div class="container">
+            <div class="myheight">Height</div >
+            <input type="range" name="" id="Height" min="0" max="200" value="100">
+            <div class="myweight">Weight</div>
+            <input type="range" name="" id="Weight" min="0" max="200" value="100">
+            <div id="bmi">Your BMI</div>
+        </div>
+    </div>
+
+    <div class="project">
+        <h1>ToDo List</h1>
+        <div class="container">
+           <div class="input">
+            <input type="text" name="" id="addnew" class="password">
+            <span id="todo"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div id="todoItems">
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="project">
+        <h1 id="musicheader">Music Player</h1>
+        <div class="container musicborder">
+            <div class="player">
+                <div class="img"><img src="image/2.jpg" alt="" id="image"></div>
+                <div class="details">
+                    <p id="name">Reminder</p>
+                    <p id="artist">The Weeknd</p>
+                        <audio src="music/2.mp3" id="song"></audio>
+                        <input type="range" min="0" max="100" value="0" id="tracktime" >
+                        <div class="controls ">
+                            <div class="prev btn"><i class="fa-solid fa-backward"></i></div>
+                           <div class="playpause btn">
+                            <i class="fa-solid fa-play"></i>
+                           </div>
+                            <div class="next btn"><i class="fa-solid fa-forward"></i></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

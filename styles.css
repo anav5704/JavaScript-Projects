@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    accent-color: var(--blue);   
+    color: whitesmoke; 
+    font-family: 'Poppins', sans-serif;
+    transition: al .3s ease;
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --black: #151515;
+    --grey: #282a30;
+    --offwhite: rgba(255, 255, 255, 0.3);
+    --blue:#38b6ff;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type:y mandatory;
+    scroll-behavior: smooth;
+    background-color: var(--black);
+}
+
+body { 
+    padding: 20px;
+}
+
+select, button, input, option {
+    margin-right: 20px;
+    padding: 10px 20px;
+    color: var(--black);
+    border-radius: 5px;
+    outline: none;
+} 
+
+.project {
+    height: 100vh;      
+    scroll-snap-align:start;    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--grey);
+    border: 2px solid var(--blue);
+    box-sizing: border-box;
+}
+
+/* .customCursor {
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 999;
+} */
+
+#thediv {
+    border-radius: 5px;
+    margin: auto;
+}
+
+#bmi {
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin-top: 20px;
+    width: 200px;
+}
+
+#make {
+    cursor: pointer;
+}
+
+.password {
+    outline: navy;
+    caret-color: var(--blue);
+    border: 2px solid var(--grey);
+    font-size: 1.25rem;
+    color: black;
+    position: relative;
+    margin: auto;
+} 
+
+.password:focus {
+    border: 2px solid var(--blue);
+}
+
+.input {
+    position: relative;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    transform: translate(-40px, -50%);
+    padding: 5px 7px;
+    cursor: pointer;
+} 
+
+span i {
+    color: var(--grey);
+}
+
+input[type="range"] {
+    padding: 0px;
+    cursor: pointer;
+    width: 100%;
+   appearance: none ;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    height: 5px;
+    background-color: var(--offwhite);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color:white;
+    border-radius: 50%;
+    border: none;
+} 
+
+.time { 
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 0px;
+}
+
+.player {
+    display: flex;
+}
+
+.player .img {
+    height: 130px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.details {
+    margin-left: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.15rem;
+}
+
+.player .img img{
+    height: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5px;
+    margin: 0px 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn i{
+    color: var(--offwhite);
+}
+
+.btn:hover  i{
+    color: white;
+}
+
+.musicborder {
+    border-color: teal;
+}
+
+#musicheader {
+    color: teal;
+}
+
+.hr, .min, .sec {
+    font-variant-numeric:tabular-nums ;
+
+}
+.clock  {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.clock .container {
+    width: 75px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0px 10px;
+    font-weight: bolder;
+}
+
+.length {
+    margin-left: 20px;
+    outline: none;
+    width: 75px ;
+    padding: 8px 10px ;
+    font-size: 1rem;
+
+}
+
+
+h4 {
+    margin-left: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clock  {
+        flex-direction: row;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .details{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    input, select {
+        margin: 15px 0px;
+        width: 100%;
+    }
+
+    #bmi , #make{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .player .img {
+        height: unset;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .player .img {
+        padding-top: 20px;
+    }
+}
