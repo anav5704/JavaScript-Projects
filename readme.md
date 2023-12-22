@@ -2,11 +2,11 @@
 
 ![hero](https://github.com/anav5704/JavaScript-Projects/blob/main/docs/js-projects.png)
 
-This is a simple collection of Beginner friendly JavaScript projects I made back when I was leaarning JavaScript. They are all linked to a HTML file which serves these projects. Here is a list of all the projects made:
+This is a simple collection of beginner-friendly JavaScript projects I made back when I was learning JavaScript. They are all linked to a HTML file that serves these projects. Here is a list of all the projects made:
 
 - Digital clock
-- Password hide/show
-- Passwoed generator
+- Hide/show password
+- Password generator
 - Make a div
 - BMI calculator
 - Todo list
