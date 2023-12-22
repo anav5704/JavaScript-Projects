@@ -24,8 +24,6 @@ Make sure you have the ```live server``` extension installed in VS Code. Then fo
 
 ## Learning Resources
 
-- [JavaScript roadmap](https://roadmap.sh/javascript)
-- [JavaScript crash course](https://www.youtube.com/watch?v=XIOLqoPHCJ4)
 - [JavaScript DOM manipulation](https://www.youtube.com/watch?v=5fb2aPlgoys)
-
-
+- - [JavaScript crash course](https://www.youtube.com/watch?v=XIOLqoPHCJ4)
+- [JavaScript roadmap](https://roadmap.sh/javascript)
